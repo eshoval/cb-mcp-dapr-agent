@@ -1,0 +1,117 @@
+{
+  "scopes": {
+    "_default": {
+      "collections": {
+        "_default": {
+          "documents_count": 387,
+          "schema_summary": [
+            {
+              "type": "patient",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "examples": [
+                    "162422580",
+                    "262686411",
+                    "276780761"
+                  ]
+                },
+                "name": {
+                  "type": "string",
+                  "examples": [
+                    "Christopher Harris",
+                    "George Scott"
+                  ]
+                },
+                "gender": {
+                  "type": "string",
+                  "examples": [
+                    "female",
+                    "male"
+                  ]
+                },
+                "birth_date_year": {
+                  "type": "number",
+                  "examples": [
+                    1935,
+                    1951,
+                    2003
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "value": "patient"
+                }
+              }
+            },
+            {
+              "type": "test",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "examples": [
+                    "t997dc369",
+                    "tb242d619",
+                    "tc6309d86"
+                  ]
+                },
+                "patient_id": {
+                  "type": "string",
+                  "examples": [
+                    "131728845",
+                    "607228726",
+                    "867993212"
+                  ]
+                },
+                "result_date": {
+                  "type": "string",
+                  "examples": [
+                    "2024-01-26",
+                    "2024-04-29"
+                  ]
+                },
+                "results": {
+                  "type": "array",
+                  "items_properties": {
+                    "result_id": {
+                      "type": "string",
+                      "examples": [
+                        "findings",
+                        "status"
+                      ]
+                    },
+                    "result_value": {
+                      "type": "string",
+                      "examples": [
+                        "abnormal",
+                        "fracture detected"
+                      ]
+                    }
+                  }
+                },
+                "test_type": {
+                  "type": "string",
+                  "examples": [
+                    "blood_test",
+                    "ecg",
+                    "kidney_function"
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "value": "test"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "_system": {
+      "collections": {
+        "_query": {},
+        "_mobile": {}
+      }
+    }
+  }
+}
